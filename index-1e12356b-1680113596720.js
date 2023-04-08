@@ -10,7 +10,17 @@
 					i.tagName === 'LINK' && i.rel === 'modulepreload' && s(i);
 	}).observe(document, { childList: !0, subtree: !0 });
 	function n(r) {
-		return {};
+		const o = {};
+		return (
+			r.integrity && (o.integrity = r.integrity),
+			r.referrerpolicy && (o.referrerPolicy = r.referrerpolicy),
+			r.crossorigin === 'use-credentials'
+				? (o.credentials = 'include')
+				: r.crossorigin === 'anonymous'
+				? (o.credentials = 'omit')
+				: (o.credentials = 'same-origin'),
+			o
+		);
 	}
 	function s(r) {
 		if (r.ep) return;
@@ -18,9 +28,27 @@
 		const o = n(r);
 		fetch(r.href, o);
 	}
-	return false;
 })();
-
+function ms(e, t) {
+	const n = Object.create(null),
+		s = e.split(',');
+	for (let r = 0; r < s.length; r++) n[s[r]] = !0;
+	return t ? (r) => !!n[r.toLowerCase()] : (r) => !!n[r];
+}
+function _s(e) {
+	if (j(e)) {
+		const t = {};
+		for (let n = 0; n < e.length; n++) {
+			const s = e[n],
+				r = ae(s) ? ci(s) : _s(s);
+			if (r) for (const o in r) t[o] = r[o];
+		}
+		return t;
+	} else {
+		if (ae(e)) return e;
+		if (se(e)) return e;
+	}
+}
 const oi = /;(?![^(]*\))/g,
 	ii = /:([^]+)/,
 	li = /\/\*.*?\*\//gs;
