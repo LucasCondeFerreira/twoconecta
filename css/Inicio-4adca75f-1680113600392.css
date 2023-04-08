@@ -990,7 +990,7 @@ section.depoimentos[data-v-56922e2b] {
 }
 .titulo h2[data-v-56922e2b] {
 	font-family: var(--estilo);
-	font-size: clamp(6rem, 1vw, 9rem);
+	font-size: clamp(4rem, 1vw, 7rem);
 	color: var(--cor-branco);
 	text-transform: uppercase;
 	line-height: 1;
@@ -1168,7 +1168,7 @@ img.detalhe.dois[data-v-56922e2b] {
 		width: 100%;
 	}
 	.titulo h2[data-v-56922e2b] {
-		font-size: clamp(4rem, 1vw, 7rem);
+		font-size: clamp(3rem, 1vw, 5rem);
 	}
 	.titulo p[data-v-56922e2b] {
 		margin: 10px 0 20px;
@@ -1452,7 +1452,6 @@ section.bonus[data-v-7a91578b] {
 	text-transform: uppercase;
 	margin: 0 0 0 15px;
 	width: 100%;
-	max-width: 160px;
 }
 .quadro p[data-v-7a91578b] {
 	font-family: var(--regular);
