@@ -1,19 +1,19 @@
 @media screen and (max-width: 900px) {
   .item[data-v-525d] {
-    width: 380px !important;
-    min-width: 380px !important;
-    max-width: 380px !important;
+    width: 290px !important;
+    min-width: 290px !important;
+    max-width: 290px !important;
   }
   .quadro[data-v-525d] {
 
-  max-width: 380px !important;
+  max-width: 290px !important;
 }
 }
 .slide[data-v-525d] {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 20px 80px;
+  padding: 0 0 80px;
   overflow-x: scroll;
   width: 100%;
   z-index: 1;
@@ -2297,7 +2297,7 @@ img.detalhe.dois[data-v-f72ac307] {
 }
 @media screen and (max-width: 1000px) {
   section.assinar[data-v-f72ac307] {
-    padding: 60px 20px;
+    padding: 60px 12px;
   }
   .titulo[data-v-f72ac307] {
     margin: 0 0 20px;
