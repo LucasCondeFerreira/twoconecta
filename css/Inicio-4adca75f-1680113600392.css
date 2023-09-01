@@ -1,12 +1,12 @@
 @media screen and (max-width: 900px) {
   .item[data-v-525d] {
-    width: 290px !important;
-    min-width: 290px !important;
-    max-width: 290px !important;
+    width: 345px !important;
+    min-width: 345px !important;
+    max-width: 345px !important;
   }
   .quadro[data-v-525d] {
 
-  max-width: 290px !important;
+  max-width: 345px !important;
 }
 }
 .slide[data-v-525d] {
