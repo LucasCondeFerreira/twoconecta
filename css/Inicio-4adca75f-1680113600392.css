@@ -1,3 +1,175 @@
+.slide[data-v-525d] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 20px 80px;
+  overflow-x: scroll;
+  width: 100%;
+  z-index: 1;
+}
+.conteudo[data-v-525d] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  transition: all 0.3s;
+}
+.item[data-v-525d] {
+  display: flex;
+  padding: 10px;
+  width: 440px;
+  min-width: 440px;
+  max-width: 440px;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  margin: 0 24px 0 0;
+}
+
+.quadro[data-v-525d] {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  max-width: 440px;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.quadro .faixa[data-v-525d] {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background-color: var(--cor-marca);
+  position: absolute;
+  z-index: 1;
+  animation: faixaQuadro-525d 10s linear infinite;
+}
+@keyframes faixaQuadro-525d {
+  0% {
+    top: -20%;
+    left: -40%;
+  }
+  50% {
+    top: 120%;
+    left: 120%;
+  }
+  to {
+    top: -20%;
+    left: -40%;
+  }
+}
+.quadro .conteudo[data-v-525d] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-preto);
+  border-radius: 10px;
+  z-index: 2;
+}
+.quadro .conteudo .video[data-v-525d] {
+  width: 100%;
+  height: 100px;
+  background-image: url(../images/gladiador.gif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+.quadro .conteudo .preco[data-v-525d] {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 30px 40px 20px;
+  width: 100%;
+}
+.quadro .conteudo .preco h2[data-v-525d] {
+  font-family: var(--estilo);
+  font-size: clamp(6rem, 1vw, 9rem);
+  color: var(--cor-branco);
+  margin: 0 15px 0 5px;
+  line-height: 1;
+}
+.quadro .conteudo .preco h3[data-v-525d] {
+  font-family: var(--medium);
+  font-size: clamp(3rem, 1vw, 4rem);
+  color: var(--cor-branco);
+  padding: 0 0 10px;
+  line-height: 1;
+}
+.quadro .conteudo .preco h4[data-v-525d] {
+  font-family: var(--medium);
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 0 0 10px;
+  width: 100%;
+  max-width: 100px;
+}
+.quadro .conteudo .beneficios[data-v-525d] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 40px;
+  width: 100%;
+}
+.quadro .conteudo .beneficios p[data-v-525d] {
+  font-family: var(--regular);
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 0 25px 25px;
+}
+.quadro .conteudo .beneficios p svg[data-v-525d] {
+  width: 15px;
+  min-width: 15px;
+  fill: var(--cor-branco);
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.quadro .conteudo .botao[data-v-525d] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 40px 40px;
+}
+.quadro .conteudo a[data-v-525d] {
+  font-family: var(--estilo);
+  font-size: clamp(1.8rem, 1vw, 2.5rem);
+  color: var(--cor-preto);
+  background-color: var(--cor-marca);
+  box-shadow: 0 10px 20px 0 var(--cor-preto);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.quadro .conteudo a[data-v-525d]:hover {
+  transform: scale(0.95);
+  box-shadow: 0 10px 20px 0 var(--cor-marca);
+}
+.quadro .conteudo h5[data-v-525d] {
+  font-family: var(--medium);
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+  color: var(--cor-branco);
+  margin: 15px 0 0;
+}
+
+
 nav[data-v-cc7dc492] {
   display: flex;
   align-items: center;
@@ -1920,7 +2092,7 @@ section.assinar[data-v-f72ac307] {
   background-color: var(--cor-preto);
   position: relative;
   overflow: hidden;
-  padding: 80px;
+  padding: 80px 60px;
 }
 .titulo[data-v-f72ac307] {
   display: flex;
