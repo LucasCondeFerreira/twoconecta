@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .item[data-v-525d] {
     width: 345px !important;
     min-width: 345px !important;
@@ -8,6 +8,11 @@
 
   max-width: 345px !important;
 }
+
+  .video[data-v-3839a0d6] {
+    display: none !important;
+  }
+
 }
 .slide[data-v-525d] {
   display: flex;
