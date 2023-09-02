@@ -1864,17 +1864,18 @@
   </div>
 
   <script>
-    // Função para alternar a classe "ativo" no botão com ID "menu"
-    function toggleSwitchMenu() {
-      const menuButton = document.getElementById("menu");
-      menuButton.classList.toggle("ativo");
 
-      const opcoesDiv = document.querySelector(".opcoes");
-      opcoesDiv.classList.toggle("mostrar");
+    // Função que adiciona e remove as classes nos elementos do botão e do menu
+    function toggleSwitchMenu() {
+      const menuButton = document.getElementById("menu")
+      menuButton.classList.toggle("ativo")
+
+      const opcoesDiv = document.querySelector(".opcoes")
+      opcoesDiv.classList.toggle("mostrar")
     }
 
-    // Adiciona um ouvinte de evento de clique ao botão com ID "menu"
-    document.getElementById("menu").addEventListener("click", toggleSwitchMenu);
+    // Função que observa o evento de clique no botão
+    document.getElementById("menu").addEventListener("click", toggleSwitchMenu)
   </script>
 
 </body>
