@@ -1801,7 +1801,7 @@
     document.querySelectorAll(".botao-contato").forEach(function (botao) {
       botao.addEventListener("click", function () {
         const id = this.id;
-        const servico = document.querySelector(`.titulo-servico-${id}`).innerHtml;
+        const servico = document.querySelectorAll(`.titulo-servico-${id}`).innerHtml;
         message(servico);
       })
     })
