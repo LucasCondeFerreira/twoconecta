@@ -2298,9 +2298,9 @@ img.detalhe[data-v-f72ac307] {
   pointer-events: none;
 }
 img.detalhe.um[data-v-f72ac307] {
-  bottom: -200px;
+  bottom: -100px;
   left: 100px;
-  width: 1000px;
+  width: 800px;
   opacity: 0.3;
   animation: detalheMexendoUm-f72ac307 10s linear infinite;
 }
