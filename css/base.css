@@ -2340,6 +2340,8 @@ img.detalhe[data-v-f72ac307] {
   pointer-events: none;
 }
 img.detalhe.um[data-v-f72ac307] {
+  position: absolute;
+  z-index: -1;
   bottom: 00px;
   left: 100px;
   width: 800px;
