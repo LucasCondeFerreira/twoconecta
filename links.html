@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="HandheldFriendly" content="true" />
+
+  <!-- Título -->
+  <title>TwoConecta - Alta Conversão</title>
+  <meta property="og:title" content="TwoConecta - Links" />
+  <meta name="apple-mobile-web-app-title" content="TwoConecta - Links" />
+  <meta name="application-name" content="TwoConecta - Links" />
+
+  <!-- Descrição -->
+  <meta name="description" content="Rumo á Alta Conversão - Transformo sua ideia em uma máquina de conversão." />
+  <meta itemprop="description" content="Rumo á Alta Conversão - Transformo sua ideia em uma máquina de conversão." />
+  <meta property="og:description" content="Rumo á Alta Conversão - Transformo sua ideia em uma máquina de conversão." />
+
+  <!-- Dentro do Google -->
+  <meta name="robots" content="index" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
+
+
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- Cor -->
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="msapplication-navbutton-color" content="#000000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+
+  <!-- Tamanho imagem -->
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:type" content="website" />
+  <meta property="og:card" content="summary_large_image" />
+
+  <!-- Share Image URL -->
+
+  <!-- Site URL -->
+  <link rel="stylesheet" href="css/links.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/base.css" />
+</head>
+
+<body ondragstart="return false" ondragleave="return false">
+  <div id="app" data-v-app="">
+    <div id="internet" class="" data-v-01733872="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.333 469.333" data-v-01733872="">
+        <path stroke="#ffffff" stroke-width="12"
+          d="M170.667 336.6l64 64 64-64c-35.307-35.307-92.694-35.307-128 0zm-85.334-85.333L128 293.933c58.88-58.88 154.453-58.88 213.333 0L384 251.267c-82.453-82.454-216.213-82.454-298.667 0zM0 165.933L42.667 208.6c106.027-106.027 277.973-106.027 384 0l42.667-42.667C339.733 36.333 129.6 36.333 0 165.933z"
+          data-v-01733872=""></path>
+      </svg>
+      <p data-v-01733872="">
+        Parece que você está sem conexão com a internet. Por favor, verifique
+        sua conexão e tente novamente.
+      </p>
+    </div>
+    <div class="body">
+      <div class="header">
+        <div class="perfil">
+          <img src="images/foto-perfil.webp" alt="">
+        </div>
+        <div class="name">
+          <h2>Lucas Conde</h2>
+          <h3>@twoconecta</h3>
+        </div>
+      </div>
+      <div class="main">
+        <button class="button"><img src="/images/botao-site.JPG" class="button" alt=""></button>
+        <button class="button"><img src="/images/botao-whatsapp.PNG" class="button" alt=""></button>
+      </div>
+      <div class="buttons">
+        <button class="button"><img src="" class="button" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // Função que adiciona e remove as classes nos elementos do botão e do menu
+    function toggleSwitchMenu() {
+      const menuButton = document.getElementById("menu")
+      menuButton.classList.toggle("ativo")
+
+      const opcoesDiv = document.querySelector(".opcoes")
+      opcoesDiv.classList.toggle("mostrar")
+    }
+
+    // Função que observa o evento de clique no botão
+    document.getElementById("menu").addEventListener("click", toggleSwitchMenu)
+  </script>
+
+  <script>
+    // Script para observar o clique do botão
+    document.querySelectorAll(".botao-contato").forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        const id = this.id;
+        const servico = document.querySelector(`.titulo-servico-${id}`).innerHTML;
+        message(servico);
+      })
+    })
+
+    // Script da pré-mensagem no WhatsApp
+    function message(servico) {
+      const text =
+        `https://api.whatsapp.com/send?phone=5551990001953&text=` +
+        `Olá, estou entrando em contato referente ao serviço de ${servico}\n\n` +
+        `Vi no seu site e achei o ideal para a minha ideia\n\n` +
+        `(Adicionar aqui detalhes ou dúvidas)\n\n`;
+
+      window.location.href = encodeURI(text);
+    }
+  </script>
+
+
+
+</body>
+
+</html>
