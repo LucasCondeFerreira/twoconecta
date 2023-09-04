@@ -187,7 +187,7 @@
       }
       .body > .buttons {
         gap: 24px;
-        margin-top: 24px;
+        margin-top: 8px;
       }
       .body > .buttons > a.button {
         width: 48px;
