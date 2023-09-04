@@ -19,9 +19,7 @@
     scroll-behavior: smooth;
   }
 }
- *:target {
-	 scroll-margin-top: .8rem !important;
-}
+
 
 .slide[data-v-525d] {
   display: flex;
@@ -107,6 +105,24 @@
   background-position: center;
   border-radius: 10px 10px 0 0;
 }
+.quadro .conteudo .titulo-preco[data-v-525d] {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px 0;
+  width: 100%;
+}
+.quadro .conteudo .titulo-preco h4[data-v-525d] {
+  font-family: var(--medium);
+  font-size: clamp(1.5rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: -24px;
+  padding: 0;
+  width: 100%;
+}
 .quadro .conteudo .a-partir[data-v-525d] {
   display: flex;
   align-items: flex-end;
@@ -176,7 +192,6 @@
   color: var(--cor-branco);
   line-height: 1.5;
   padding: 0 0 10px;
-  width: 100%;
   max-width: 100px;
 }
 .quadro .conteudo .beneficios[data-v-525d] {
@@ -630,7 +645,7 @@ section.apresentacao[data-v-3839a0d6] {
 }
 .video .capa.um[data-v-3839a0d6] {
   display: flex;
-  background-image: url(../images/foto-1.png);
+  background-image: url(../images/foto-1.webp);
   background-size: cover;
   background-position: left;
   background-color: var(--cor-marca);
@@ -649,7 +664,7 @@ section.apresentacao[data-v-3839a0d6] {
 }
 .video .capa.tres[data-v-3839a0d6] {
   display: flex;
-  background-image: url(../images/foto-2.png);
+  background-image: url(../images/foto-2.webp);
   background-size: cover;
   background-position: left;
   background-color: var(--cor-marca);
@@ -1339,7 +1354,7 @@ section.depoimentos[data-v-56922e2b] {
 }
 .video .capa.um[data-v-56922e2b] {
   display: flex;
-  background-image: url(../images/foto-1.png);
+  background-image: url(../images/foto-1.webp);
   background-size: cover;
   background-position: left;
   background-color: var(--cor-marca);
@@ -1350,7 +1365,7 @@ section.depoimentos[data-v-56922e2b] {
 }
 .video .capa.dois[data-v-56922e2b] {
   display: flex;
-  background-image: url(../images/foto-2.png);
+  background-image: url(../images/foto-2.webp);
   background-size: cover;
   background-position: left;
   background-color: var(--cor-marca);
@@ -2615,7 +2630,7 @@ section.duvidas[data-v-5cd1b5da] {
   width: 100%;
   max-width: 1000px;
   background-color: var(--cor-preto);
-  background-image: url(../images/background-whatsapp.png);
+  background-image: url(../images/background-whatsapp.webp);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -2857,7 +2872,7 @@ section.oportunidades[data-v-d96edb5f] {
   width: 20%;
   height: 350px;
   background-color: var(--cor-preto);
-  background-image: url(../images/comprovantes.png);
+  background-image: url(../images/comprovantes.webp);
   background-size: cover;
   background-position: left;
   border-radius: 20px;
@@ -3118,7 +3133,7 @@ section.professor[data-v-136dd6c9] {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-image: url(../images/foto-perfil.jpeg);
+  background-image: url(../images/foto-perfil.webp);
   background-size: cover;
   background-position: center;
   position: relative;
