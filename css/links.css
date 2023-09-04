@@ -76,8 +76,14 @@
   width: 1.5rem;
   height: 1.5rem;
 }
-
-.body > .main {
+.body > div > .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.body > div > .main {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -87,27 +93,27 @@
   align-items: center;
   justify-content: center;
 }
-.body > .main > a.button {
+.body > div > .main > a.button {
   width: 80%;
   border-radius: 60px;
   background: transparent;
 }
 
-.body > .main > a.button > img.button {
+.body > div > .main > a.button > img.button {
   max-width: 100%;
   object-fit: cover;
   max-height: 100%;
   border-radius: 50px;
 }
 
-.body > .buttons {
+.body > div > .buttons {
   display: flex;
   gap: 28px;
   margin-top: 16px;
   align-items: center;
   justify-content: center;
 }
-.body > .buttons > a.button {
+.body > div > .buttons > a.button {
   width: 95px;
   height: 95px;
   background: transparent;
@@ -116,7 +122,7 @@
   justify-content: center;
 }
 
-.body > .buttons > a.button > img.button {
+.body > div > .buttons > a.button > img.button {
   max-width: 100%;
   max-height: 100%;
 }
@@ -166,7 +172,7 @@
         width: .8rem;
         height: .8rem;
       }
-      .body > .main {
+      .body > div > .main {
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -174,27 +180,27 @@
         align-items: center;
         justify-content: center;
       }
-      .body > .main > a.button {
+      .body > div > .main > a.button {
         width: 100%;
         background: transparent;
       }
       
-      .body > .main > a.button > img.button {
+      .body > div > .main > a.button > img.button {
         max-width: 100%;
         object-fit: cover;
         max-height: 100%;
         border-radius: 30px;
       }
-      .body > .buttons {
+      .body > div > .buttons {
         gap: 24px;
         margin-top: 8px;
       }
-      .body > .buttons > a.button {
+      .body > div > .buttons > a.button {
         width: 48px;
         height: 48px;
       }
       
-      .body > .buttons > a.button > img.button {
+      .body > div > .buttons > a.button > img.button {
         max-width: 100%;
         max-height: 100%;
       }
